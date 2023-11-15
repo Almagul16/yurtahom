@@ -1,0 +1,217 @@
+/* UTILITIES */
+.menu {
+  list-style: none;
+  padding: 10;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  }
+
+  .menu li {
+    margin: 0 10px;
+  }
+  body {
+    font-family:'Roboto', sans-serif;
+    height: 100vh;
+  }
+ 
+  .menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    
+  }
+  
+  li {
+    list-style: none;
+  }
+  /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .nav{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f5f5f5 ;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links a:hover{
+color: #FF9130;
+transition: 0.1s ease;
+  }
+  /* LOGO */
+  .logo {
+    text-decoration: none;
+    font-size: 29px;
+    color: black;
+  }
+  
+  .post {
+    display: flex;
+    justify-content:center ;
+    margin: 20px;
+  
+  }
+.postimg {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+  /* RESPONSIVE NAVBAR MENU STARTS */
+/* CHECKBOX HACK */
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.one,.two,.three,.four{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    
+}
+.one :hover{
+  padding: 1px;
+  
+}
+.two :hover{
+    padding: 1px;
+}
+.three :hover{
+    padding: 1px;
+}
+.four :hover{
+    padding: 1px;
+}
+.menuu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #FF9130;
+}
+.head {
+padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+   
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+#cont {
+  display: flex;
+  justify-content: center;
+}
+
+#pictures {
+  width: 1200px;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+display: flex;
+justify-content: center;
+padding: 20px;
+background-color: #FF9130;
+font-family: 'Montserrat', sans-serif;
+}
+.villa{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.dom {
+  background-color: #f5f5f5;
+  color: gray;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.kanal {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f5;
+}
+
+.so {
+  margin: 20px;
+  
+}
+
+  /* APPLYING MEDIA QUERIES */
+  @media (max-width: 768px) {
+   .menu {
+      display:none;
+      position: absolute;
+      background-color:#FF8080;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding: 16px 0;
+    }
+  
+    .menu li:hover {
+      display: inline-block;
+      background-color:#FF8080
+      transition: 0.3s ease;
+    }
+  
+    .menu li + li {
+      margin-top: 12px;
+    }
+  
+    input[type=checkbox]:checked ~ .menu {
+      display: block;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .dropdown {
+      left: 50%;
+      top: 30px;
+      transform: translateX(35%);
+    }
+  
+    .dropdown li:hover {
+      background-color: #4c9e9e;
+    }
+}
