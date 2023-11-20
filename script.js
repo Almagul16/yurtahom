@@ -22,7 +22,7 @@ let i = 0;
 
 
  const searchInput = document.querySelector("#search");
- const divs = document.querySelectorAll (".one");
+ const divs = document.querySelectorAll (".room");
  
  searchInput.addEventListener ("keyup",function(event){
      const word = event.target.value.toLowerCase ();
@@ -30,3 +30,9 @@ let i = 0;
          item.querySelector("p").textContent.toLowerCase().includes(word) ? (item.style.display = "block") : (item.style.display = "none");
      })
  })
+
+ /* Плюсики*/
+ function toggleContent() {
+  var content = document.getElementById("content");
+  content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+}
